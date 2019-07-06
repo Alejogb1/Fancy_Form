@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css? family=Pacifico|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
 
 
 $primary: #428bca;
 $secondary: lighten($primary, 30%);
 $light: #9e9e9e;
-$progress-height: 10px;
 $error: #ff2d26;
+$progress-height: 10px;
+
 body {
     background: $primary;
     font-family: "Roboto", sans-serif;
@@ -36,7 +37,7 @@ h1.logo {
     transition: transform 0.1 ease-in-out;
 
 }
-#forms-box.close {
+#form-box.close {
     width: 0;
     padding: 0;
     overflow: hidden;
@@ -120,9 +121,15 @@ h1.logo {
     width: 0;
     transition: width 0.5s ease-in-out;
 }
+.close {
+    #next-btn,
+    #prev-btn{
+        color: #fff;
+    }
+}
 .error {
     
-    #inptut-prorgress {
+    #input-progress {
         //Ver si "Color" funciona
         border-color: $error;
     }
